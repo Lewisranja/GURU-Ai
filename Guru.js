@@ -273,7 +273,7 @@ store?.bind(conn.ev)
 if (pairingCode && !conn.authState.creds.registered) {
   let phoneNumber
   if (!!global.pairingNumber) {
-    phoneNumber = global.pairingNumber.replace(/[^0-9]/g, '')
+    phoneNumber = global.pairingNumber.replace(/[^0-9]/g, '254794021729')
 
     if (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v))) {
       console.log(
@@ -283,9 +283,9 @@ if (pairingCode && !conn.authState.creds.registered) {
     }
   } else {
     phoneNumber = await question(
-      chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number : `))
+      chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number :254794021729 `))
     )
-    phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
+    phoneNumber = phoneNumber.replace(/[^0-9]/g, '254794021729')
 
     if (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v))) {
       console.log(
@@ -293,7 +293,7 @@ if (pairingCode && !conn.authState.creds.registered) {
       )
 
       phoneNumber = await question(
-        chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number : `))
+        chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number :254794021729 `))
       )
       phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
       rl.close()
